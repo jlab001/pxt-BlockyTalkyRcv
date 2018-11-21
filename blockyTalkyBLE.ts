@@ -25,7 +25,7 @@ namespace blockyTalkyBLE {
     //% mutateDefaults="key,stringValue"
     //% blockId=blockyTalkyBLE_on_string_recieved
     //% block="on string received|key %theKey"
-    export function onStringReceived(key: string, callback: (stringValue: TypeContainer) => void) {
+    export function onStringReceived(key: string, callback: (stringValue: blockyTalkyBLE.TypeContainer) => void) {
         let newHandler = new LinkedKeyHandlerList()
         newHandler.callback = callback;
         newHandler.type = ValueTypeIndicator.String;
@@ -39,7 +39,7 @@ namespace blockyTalkyBLE {
     //% mutateDefaults="key,numberValue"
     //% blockId=blockyTalkyBLE_on_number_received
     //% block="on number received|key %theKey"
-    export function onNumberReceived(key: string, callback: (numberValue: TypeContainer) => void) {
+    export function onNumberReceived(key: string, callback: (numberValue: blockyTalkyBLE.TypeContainer) => void) {
         let newHandler = new LinkedKeyHandlerList()
         newHandler.callback = callback;
         newHandler.type = ValueTypeIndicator.Number;
